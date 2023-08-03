@@ -22,12 +22,14 @@ buildscript {
         gradleVersion = '4.1.0'
         supportlibVersion = '1.2.0'
         dataBindingCompilerVersion = gradleVersion // Always need to be the same.
+        navigationVersion ="2.3.0"
     }
     repositories {
         google()
         jcenter()
     }
     dependencies {
+        // implementation put at other side, here only contain classpath
         classpath "com.android.tools.build:gradle:$gradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
